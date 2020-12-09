@@ -1,0 +1,143 @@
+body {
+	margin: 0;
+	font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+	margin: 50px 0px;
+	padding: 0px;
+	width: 100px;
+	background-color: #2f3940;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+.sidebar a {
+	display: block;
+	color: black;
+	padding: 16px;
+	text-decoration: none;
+	color: white;
+
+}
+
+.sidebar a.active {
+	background-color: #0074bb;
+	color: white;
+}
+
+.sidebar a:hover:not(.active) {
+	background-color: #255470;
+	color: white;
+}
+
+div.content {
+	margin: 10px 10px 10px 110px;
+	background-color: #000;
+	/*padding: 1px 16px;*/
+	/*height: 10%;*/
+	/*width: 10%;*/
+}
+
+@media screen and (max-width: 700px) {
+	.sidebar {
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.sidebar a {float: left;}
+	div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+	.sidebar a {
+		text-align: center;
+		float: none;
+	}
+}
+
+
+
+.centerarea {
+	margin: 0px 0px 0px 0px;
+	padding: 10px 10px 10px 10px;
+	height: calc(100% - 80px);
+	width: calc(100% - 120px);
+	background-color: #eaf1f7;
+	position: fixed;
+	overflow: auto;
+}
+
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*.billTableHeader {
+	background-color:#c8daea; 
+	text-align:center;
+	color:#404040;
+}
+
+
+table.tablesorter thead tr .header {
+    background-image: url(updownarrow.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer; 
+    text-align:center;
+}
+
+table.tablesorter thead tr .headerSortUp {
+    background-image: url(uparrow.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+    background-image: url(downarrow.gif);
+}
+
+
+*/
+
+
+
+
+
+.billtableclickable{
+	cursor:pointer;
+	color:#0f6b99 !important;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+
+
+.centerareadisplaynone{
+	display: none;
+}
+
+.centerareadisplayblock{
+	display: block;
+}
